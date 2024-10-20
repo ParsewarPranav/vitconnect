@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Your Profile</h1>
+        <form id="edit-profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter your job title">
+
+            <label for="about">About:</label>
+            <textarea id="about" rows="4" placeholder="Enter a short bio"></textarea>
+
+            <h3>Experience 1</h3>
+            <label for="experience1-title">Job Title:</label>
+            <input type="text" id="experience1-title" placeholder="Enter your first job title">
+
+            <label for="experience1-details">Company and Duration:</label>
+            <input type="text" id="experience1-details" placeholder="Enter the company and duration">
+
+            <label for="experience1-description">Description:</label>
+            <textarea id="experience1-description" rows="4" placeholder="Describe your first job"></textarea>
+
+            <h3>Education</h3>
+            <label for="education-title">Course Title:</label>
+            <input type="text" id="education-title" placeholder="Enter the course title">
+
+            <label for="education-university">University:</label>
+            <input type="text" id="education-university" placeholder="Enter the university">
+
+            <label for="education-duration">Duration:</label>
+            <input type="text" id="education-duration" placeholder="Enter the duration">
+
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" id="skills" placeholder="Enter your skills">
+
+            <button type="button" id="save-profile">Save</button>
+        </form>
+    </div>
+
+    <script>
+        // Save profile data to localStorage
+        $('#save-profile').on('click', function() {
+            const profileData = {
+                name: $('#name').val(),
+                title: $('#title').val(),
+                about: $('#about').val(),
+                experience1: {
+                    title: $('#experience1-title').val(),
+                    details: $('#experience1-details').val(),
+                    description: $('#experience1-description').val(),
+                },
+                education: {
+                    title: $('#education-title').val(),
+                    university: $('#education-university').val(),
+                    duration: $('#education-duration').val(),
+                },
+                skills: $('#skills').val().split(',').map(skill => skill.trim())
+            };
+
+            // Save data to localStorage
+            localStorage.setItem('profileData', JSON.stringify(profileData));
+
+            // Redirect back to the profile page
+            window.location.href = 'profile.html';
+        });
+    </script>
+</body>
+</html>

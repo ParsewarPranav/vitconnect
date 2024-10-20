@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background for the whole page */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    background-color: white; /* White background for the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width of parent */
+    height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    font-size: 18px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.search-bar {
+    width: 100%; /* Full width search bar */
+    padding: 10px; /* Padding inside the search bar */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light grey border */
+    margin-bottom: 20px; /* Space below the search bar */
+}
+
+.scrolling-div {
+    max-height: 100vh; /* Maximum height for scrolling container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 10px; /* Padding inside the scrolling div */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.job-card {
+    background-color: #e0e0e0; /* Light grey background for job cards */
+    height: 100px; /* Fixed height for each job card */
+    margin-bottom: 10px; /* Space below each job card */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside each job card */
+}

@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #beceff; /* Light grey for the background */
+    color: #333; /* Dark grey for text */
+}
+
+.navbar {
+    background-color: #626262 !important; /* Dark grey for navbar background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #ffffff; /* White for the navbar links */
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.navbar-brand .logo {
+    background-color: #2f73c7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 650px;
+}
+
+.quote-section {
+    background-color: #ffffff;
+}
+
+.quote-box {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+.card-footer {
+    text-align: center;
+}
+
+.card-footer .btn {
+    background-color:  #555 !important;
+    border: none;
+    font-size: 0.9rem;
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+}
+.card-footer .btn:hover {
+    background-color: #71493a !important;
+}
+
+.card-img-top1 {
+    height: 200px;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+}
+.card{
+    padding:20px;
+    margin-left: 10px
+}
+.container1{
+    margin-left: 160px;
+}
+.head1{
+    color:#0d00ff;
+}
+.social-icon {
+    margin-right: 40px;
+    height:30px;
+    width: 30px;
+    border-radius: 7px;
+}
+.content-left,
+.content-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0) !important;
+  height: 70px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 50px;
+}

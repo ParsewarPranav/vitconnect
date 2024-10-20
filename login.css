@@ -1,0 +1,121 @@
+/* Increase navbar height */
+.navbar {
+    min-height: 100px; /* Adjust height */
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Logo styling */
+.navbar-logo {  
+    height: 100px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Flexbox alignment for the logo and brand title */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background color for the navbar */ 
+.bg-light {
+    background-color: #100247 !important;
+}
+
+
+
+/* Updated .login-section to include background image and centering */
+.login-section {
+    padding: 40px;
+    background-image: url('1back.png'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    transition: background-color 0.3s ease-in-out;
+    height: 700px;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+}
+
+/* Dark mode for .login-section */
+.login-section.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Updated card to have a transparent background and set height */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 300px; /* Increased height for the card */
+    background-color: rgba(236, 240, 243, 0.6); /* Semi-transparent background */
+    backdrop-filter: blur(0px); /* Slight blur effect for frosted glass appearance */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+/* Flexbox inside the card body to center content */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100%; /* Ensures the content fills the card height */
+    text-align: center; /* Align text in the center */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Text styling */
+.card-text {
+    color: #666;
+    font-weight: 100px;
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #50aaff;
+    border: none;
+}
+
+/* Hover effect for button */
+
+/* Flexbox alignment for logo */
+.logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Brand title styling */
+.brand-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Color transition for logo span */
+.logo span {
+    transition: color 0.3s;
+}
+
+/* Hover effect for logo span */
+
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Skills | ConnectU.in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    /* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Navbar Styles (if included) */
+.navbar {
+    background-color: #626262 !important; /* Dark grey navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #ffffff; /* White for navbar links */
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.navbar-brand .logo {
+    background-color:#2f73c7;/* Bright orange for logo */
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white; /* White for brand title text */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Profile Image */
+.profile {
+    margin-left: 350px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+/* Top Skills Section */
+.container {
+    width: 90%; /* Adjust container width */
+    margin: auto;
+    padding: 20px;
+}
+
+h2.gradient-text {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #000000, #6e87f4); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0% !important;
+}
+
+.row-cols-md-2 .col {
+    display: flex;
+    align-items: stretch; /* Ensure cards are of equal height */
+}
+
+.card {
+    border: 1px solid #ddd; /* Light border for cards */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition effects */
+    width: 500px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333; /* Dark grey for card title text */
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    background-color: #fff; /* White background for card footer */
+    border-top: 1px solid #ddd; /* Light border */
+    padding: 10px;
+    text-align: center;
+}
+
+.card-footer .btn-primary {
+    background-color: rgb(74, 176, 243); /* Coral button background */
+    border: none;
+    color: white;
+}
+
+.card-footer .btn-primary:hover {
+    background-color: #4a91e7; /* Darker coral on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767.98px) {
+    .container {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    h2.gradient-text {
+        font-size: 1.5rem; /* Smaller font size on smaller screens */
+    }
+
+    .card-footer .btn-primary {
+        width: 100%; /* Full width buttons on smaller screens */
+    }
+}
+
+</style>
+<body>
+    <!-- Navigation (Optional, if you want to include the same navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="student-index.html">
+                <div class="logo d-flex align-items-center justify-content-center text-white">
+                    <span class="brand-title">ConnectU.in</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-index.html">Learn New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="joboppo.html">Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://unstop.com/hackathons?gad_source=1">Hackthons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why.html">Achievements</a>
+                    </li>
+                    <li class="profile">
+                        <a href="profile.html"><img src="profil.jpg" alt="Profile" class="profile"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4 gradient-text">Top Skills</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Skill Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color:rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color:rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Artificial Intelligence</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color:rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color: rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color:rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Cybersecurity</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color: rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Computing</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color: rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">DevOps</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color: rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 9 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Blockchain</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color: rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 10 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">UX/UI Design</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="courserat.html" class="btn btn-primary" style="background-color:rgb(80, 179, 255);">Learn Skill</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
